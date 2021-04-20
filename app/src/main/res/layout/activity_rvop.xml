@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:background="@color/whiteBodyColor"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="100dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:src="@drawable/sumur"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:maxWidth="90dp"
+                android:layout_width="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/tvnamawp"
+                style="@style/viewParent.headerText.homeCardContent"
+                android:layout_below="@id/tvnamaop"
+                android:layout_toRightOf="@+id/img"
+                android:text="Hibatul Wafi"
+                android:textColor="@color/profileEditTextColor"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvnamaop"
+                android:textColor="@color/profileEditTextColor"
+                android:layout_toRightOf="@+id/img"
+                android:textSize="18sp"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                style="@style/viewParent.headerText.HomeCardTitle"
+                android:text="Objek Pajak" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

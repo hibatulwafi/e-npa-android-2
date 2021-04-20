@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    style="@style/df_dialog_layout"
+    android:layout_height="match_parent"
+    android:background="@color/grayColor"
+    tools:context=".survey.Pilihan">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:textColor="@color/blackTextColor"
+        android:text="Mau Apa Sekarang?"
+        style="@style/RegularText"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvsurvey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        android:elevation="10dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="@color/whiteCardColor"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/mainimagebg" />
+
+            <TextView
+                style="@style/RegularText"
+                android:textColor="@color/blackTextColor"
+                android:text="Survey Tempat"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvriwayat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        android:elevation="10dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="@color/whiteCardColor"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/li_multitask" />
+
+            <TextView
+                style="@style/RegularText"
+                android:textColor="@color/blackTextColor"
+                android:text="Riwayat Survey"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        android:elevation="10dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:cardBackgroundColor="@color/whiteCardColor"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sumur" />
+
+            <TextView
+                style="@style/RegularText"
+                android:textColor="@color/blackTextColor"
+                android:text="Data Titik Sumur"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

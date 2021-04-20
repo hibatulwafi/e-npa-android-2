@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="70dp"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/tvtanggal"
+                android:gravity="end"
+                android:textColor="@color/color_button_default"
+                style="@style/viewParent.headerText.logtext"
+                android:layout_width="match_parent"
+                android:layout_below="@id/tvlog"
+                android:layout_alignParentRight="true"
+                android:text="20 Juni 2020 : 19"
+                android:textSize="10sp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+            <TextView
+                android:id="@+id/tvlog"
+                android:textColor="@color/profileEditTextColor"
+                android:textSize="12sp"
+                style="@style/viewParent.headerText.logtext"
+                android:text="Anda Melakukan Penerimaan Laporan Wajib Pajak 'Wapi Putra' " />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tvtanggal"
+                android:background="@drawable/menu4"/>
+
+        </RelativeLayout>
+</LinearLayout>

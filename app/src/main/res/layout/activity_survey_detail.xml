@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    style="@style/parent.contentLayout"
+    tools:context=".survey.SurveyDetail">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:text="Detail Laporan"
+            style="@style/viewParent.headerText" />
+
+        <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:id="@+id/main_activity_container"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivdetail"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/takefoto"
+                android:layout_centerHorizontal="true" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivdetail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/labelmeter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="26dp"
+                    android:textSize="12sp"
+                    tools:text="Meter Air" />
+
+                <TextView
+                    android:id="@+id/txtmeter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textIsSelectable="true"
+                    android:textSize="12sp"
+                    android:gravity="end"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/labelmeter"
+                    tools:text="200M"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative2"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/labelwp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="26dp"
+                    android:textSize="12sp"
+                    tools:text="Wajib Pajak" />
+
+                <TextView
+                    android:id="@+id/txtwp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textIsSelectable="true"
+                    android:textSize="12sp"
+                    android:gravity="end"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/labelwp"
+                    tools:text="Hibatul Wafi"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative3"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:id="@+id/labelop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="26dp"
+                    android:textSize="12sp"
+                    tools:text="Titik Sumur"/>
+
+                <TextView
+                    android:id="@+id/txtop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textIsSelectable="true"
+                    android:textSize="12sp"
+                    android:gravity="end"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/labelop"
+                    tools:text="PT Wafi"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+
+                <Button
+                    android:background="@drawable/button_success"
+                    android:id="@+id/acc"
+                    android:onClick="validasi"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:textColor="@color/whiteTextColor"
+                    android:layout_toRightOf="@+id/decline"
+                    android:text="Terima"
+                    tools:ignore="OnClick" />
+
+
+                <Button
+                    android:background="@drawable/button_close"
+                    android:id="@+id/decline"
+                    android:onClick="decline"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/whiteTextColor"
+
+                    android:text="Tolak"
+                    tools:ignore="OnClick" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

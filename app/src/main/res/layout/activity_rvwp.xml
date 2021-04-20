@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvwp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBodyColor"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="90dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgava"
+                tools:src="@tools:sample/avatars"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:maxWidth="70dp"
+                android:layout_width="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/tvwpemail"
+                style="@style/viewParent.headerText.homeCardContent"
+                android:layout_below="@id/tvwpnama"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="-2dp"
+                android:layout_toRightOf="@+id/imgava"
+                android:text="hiwapiputra@gmail.com"
+                android:textColor="@color/profileEditTextColor"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvwpnama"
+                android:textColor="@color/profileEditTextColor"
+                android:layout_toRightOf="@+id/imgava"
+                android:textSize="18sp"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                style="@style/viewParent.headerText.HomeCardTitle"
+                android:text="Hibatul Wafi" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/imgava"
+                android:background="@drawable/menu4"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
